@@ -1,0 +1,361 @@
+:root {
+
+  --accent: #ff6f91;   /* Pink accent */
+
+  --muted: #6b5b6e;    /* Muted text */
+
+  --bg: #ffe4e1;       /* Pale pink background */
+
+  --card: #ffd9e3;     /* Slightly darker pink for cards */
+
+  --glass: rgba(255, 255, 255, 0.3); /* Glass effect for skills */
+
+}
+
+* {
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+body {
+
+  font-family: Inter, system-ui, sans-serif;
+
+  background: linear-gradient(180deg, #ffe4e1 0%, #ffd9e3 100%);
+
+  color: #42284a;
+
+  line-height: 1.5;
+
+}
+
+header {
+
+  padding: 28px 6%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+}
+
+.brand {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+}
+
+.avatar {
+
+  width: 64px;
+
+  height: 64px;
+
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, var(--accent), #ffb6c1);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #fff;
+
+  font-weight: 700;
+
+  font-size: 20px;
+
+}
+
+.name {
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+}
+
+nav a {
+
+  color: var(--muted);
+
+  text-decoration: none;
+
+  margin-left: 18px;
+
+}
+
+.container {
+
+  max-width: 1000px;
+
+  margin: 24px auto;
+
+  padding: 0 20px;
+
+}
+
+.grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 320px;
+
+  gap: 24px;
+
+}
+
+.hero {
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+
+  padding: 28px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 6px 20px rgba(66, 40, 74, 0.3);
+
+}
+
+.hero h1 {
+
+  margin: 0;
+
+  font-size: 28px;
+
+}
+
+.hero p {
+
+  color: var(--muted);
+
+  margin: 10px 0 0;
+
+}
+
+.cta {
+
+  margin-top: 18px;
+
+}
+
+.btn {
+
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  border-radius: 10px;
+
+  background: var(--accent);
+
+  color: #fff;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  border: none;
+
+}
+
+.btn:hover {
+
+  background: #ff4d81;
+
+}
+
+.card {
+
+  background: var(--card);
+
+  padding: 18px;
+
+  border-radius: 12px;
+
+  margin-top: 16px;
+
+}
+
+.small {
+
+  font-size: 13px;
+
+  color: var(--muted);
+
+}
+
+.skills {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 10px;
+
+}
+
+.skill {
+
+  background: var(--glass);
+
+  padding: 8px 10px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+
+  color: #42284a;
+
+}
+
+.projects {
+
+  display: grid;
+
+  gap: 12px;
+
+  margin-top: 14px;
+
+}
+
+.project {
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent);
+
+  padding: 14px;
+
+  border-radius: 10px;
+
+}
+
+.project h4 {
+
+  margin: 0 0 6px;
+
+}
+
+.project p {
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+
+}
+
+form {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+}
+
+input,
+
+textarea {
+
+  background: transparent;
+
+  border: 1px solid rgba(66, 40, 74, 0.2);
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  color: inherit;
+
+}
+
+input:focus,
+
+textarea:focus {
+
+  outline: none;
+
+  border-color: var(--accent);
+
+  box-shadow: 0 0 6px rgba(255, 111, 145, 0.5);
+
+}
+
+textarea {
+
+  min-height: 100px;
+
+  resize: vertical;
+
+}
+
+.muted {
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+}
+
+footer {
+
+  text-align: center;
+
+  color: var(--muted);
+
+  padding: 24px 0;
+
+}
+
+hr {
+
+  margin: 12px 0;
+
+  border: none;
+
+  border-top: 1px solid rgba(66, 40, 74, 0.2);
+
+}
+
+@media (max-width: 880px) {
+
+  .grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  nav {
+
+    display: none;
+
+  }
+
+  .avatar {
+
+    width: 56px;
+
+    height: 56px;
+
+  }
+
+}
